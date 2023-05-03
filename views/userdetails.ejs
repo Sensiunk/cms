@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container-fluid align-content-center">
-      <h1 class="display-6">Course Details</h1>
+      <h1 class="display-6">User Details</h1>
     </div>
     <div class="container-lg">
       <div class="col-lg-8">
@@ -22,52 +22,79 @@
           <div class="card-body">
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Course ID</p>
+                <p class="mb-0">First Name</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-primary mb-0"><%= course.courseid %></p>
+                <p class="text-primary mb-0"><%= user.firstname %></p>
               </div>
             </div>
             <hr />
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Course Name</p>
+                <p class="mb-0">Last Name</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-primary mb-0"><%= course.coursename %></p>
+                <p class="text-primary mb-0"><%= user.lastname %></p>
               </div>
             </div>
             <hr />
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Semester</p>
+                <p class="mb-0">Gender</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-primary mb-0"><%= course.semester %></p>
+                <p class="text-primary mb-0"><%= user.gender %></p>
               </div>
             </div>
             <hr />
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Max Enrollment</p>
+                <p class="mb-0">Age</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-primary mb-0"><%= course.enrollnum %></p>
+                <p class="text-primary mb-0"><%= user.agenum %></p>
               </div>
             </div>
             <hr />
             <div class="row">
               <div class="col-sm-3">
-                <p class="mb-0">Course Description</p>
+                <p class="mb-0">Favorability</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0"><%= course.coursedesc %></p>
+                <p class="text-primary mb-0"><%= user.favorability %></p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Is Student?</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-primary mb-0"><%= user.student %></p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Organization</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-primary mb-0"><%= user.organization %></p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Use Case</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0"><%= user.usecase %></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a class="btn btn-secondary" href="/" role="button"> Back to courses </a>
+      <a class="btn btn-secondary" href="/" role="button"> Back to users </a>
     </div>
   </body>
 </html>

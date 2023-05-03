@@ -1,0 +1,13 @@
+Fields
+1. First name - Done
+2. Last name - Done
+3. Gender - Done
+4. Age - Done
+5. borrow checker favorability (like/neutral/dislike) - Done
+6. Student? - Done
+7. Organiza-on
+8. What do you use it for? (Webapp, systems programming, etc.)
+Required Validations
+1. Age should not be less than 18.
+2. Last name cannot be empty.
+3. Organiza-on cannot be empty

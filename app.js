@@ -3,8 +3,8 @@ var express = require("express");
 var path = require("path");
 const sequelize = require("./db");
 
-var coursesRouter = require("./routes/courses");
-const Course = require("./models/Course");
+var userRouter = require("./routes/users");
+const User = require("./models/User");
 
 var app = express();
 
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", coursesRouter);
+app.use("/", userRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -36,12 +36,15 @@ app.use(function (err, req, res, next) {
 
 async function setup() {
   //TODO: This where you will create your very first instance
-  const webdev = await Course.create({
-    courseid: "CPTS489",
-    coursename: "Web Development",
-    semester: "Spring",
-    coursedesc: "Introduction to Web Development",
-    enrollnum: 80,
+  const webdev = await User.create({
+    firstname: "Manjesh",
+    lastname: "Puram",
+    gender: "Male",
+    agenum: 21,
+    favorability: "Like",
+    student: true,
+    organization: "WSU",
+    usecase: "WebAPP"
   });
 }
 
